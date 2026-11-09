@@ -3,7 +3,7 @@ from pathlib import Path
 from django.http import JsonResponse
 from django.contrib.auth import login, authenticate, logout
 from django.views.decorators.csrf import csrf_exempt
-from .restapis import get_request
+from .restapis import get_request, post_review, analyze_review_sentiments
 import logging
 import json
 
