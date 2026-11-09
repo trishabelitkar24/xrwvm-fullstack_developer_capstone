@@ -167,3 +167,20 @@ def add_review(request):
         'error': 'POST request required'
     }, status=405)
 
+
+# Get reviews for a specific dealer
+def get_reviews(request, dealer_id):
+    reviews = get_request(f'fetchReviews/dealer/{dealer_id}')
+
+    if reviews is None:
+        return JsonResponse({
+            'status': 500,
+            'reviews': []
+        }, status=500)
+
+    return JsonResponse({
+        'status': 200,
+        'reviews': reviews
+    })
+
+
