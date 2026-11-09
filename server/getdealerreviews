@@ -1,0 +1,3 @@
+theia@theiadocker-trishabelitk:/home/project$ curl http://localhost:3030/
+Welcome to the Mongoose APItheia@theiadocker-trishabelitk:/home/project$ curl http://localhost:3030/fetchReviews/dealercurl http://localhost:3030/fetchReviews/dealer/13
+[{"_id":"6af1c70061b1c30a7cd81abe","id":4,"name":"Iorgos Colley","dealership":13,"review":"Optional heuristic software","purchase":false,"purchase_date":"03/28/2020","car_make":"Kia","car_model":"Spectra","car_year":2002,"__v":0},{"_id":"6af1c70061b1c30a7cd81ac5","id":11,"name":"Cosme Spolton","dealership":13,"review":"Reactive background implementation","purchase":true,"purchase_date":"11/06/2020","car_make":"Audi","car_model":"A6","car_year":1999,"__v":0}]theia@theiadocker-trishabelitk:/home/project$ 
