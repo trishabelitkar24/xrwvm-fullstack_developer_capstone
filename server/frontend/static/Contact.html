@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Best Cars Dealership</title>
 
-    <link rel="stylesheet" href="/static/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/style.css">
+    <!-- Required CSS stylesheets -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,11 +16,14 @@
 <nav class="navbar navbar-expand-lg navbar-light"
      style="background-color: darkturquoise; min-height: 1in;">
     <div class="container-fluid">
-        <h2 style="padding-right: 5%;">Dealerships</h2>
+        <h2 style="padding-right: 5%;">Best Cars</h2>
 
         <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#navbarText">
+                data-bs-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -32,7 +36,9 @@
                     <a class="nav-link" href="/about">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/contact">Contact Us</a>
+                    <a class="nav-link active" aria-current="page" href="/contact">
+                        Contact Us
+                    </a>
                 </li>
             </ul>
         </div>
@@ -43,9 +49,10 @@
     <div class="text-center mb-4">
         <h1>Contact Us</h1>
         <p>
-            We would love to hear from you!
-            Contact Best Cars Dealership for vehicle enquiries,
-            sales assistance, and customer support.
+            We would love to hear from you! Contact Best Cars Dealership
+            for vehicle enquiries, sales assistance, test drives,
+            and customer support. Our team is committed to helping
+            you find the right vehicle.
         </p>
     </div>
 
@@ -107,7 +114,7 @@
     </div>
 </div>
 
-<script src="/static/bootstrap.bundle.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
