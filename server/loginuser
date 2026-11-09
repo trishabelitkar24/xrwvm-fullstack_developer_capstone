@@ -1,0 +1,4 @@
+(djangoenv) theia@theia-trishabelitk:/home/project/xrwvm-fullstack_developer_capstone/server$ curl -X POST http://127.0.0.1:8000/djangoapp/login \
+-H "Content-Type: application/json" \
+-d '{"userName":"trishabelitk","password":"Trisha12345$"}'
+{"userName": "trishabelitk", "status": "Authenticated"}(djangoenv) theia@theia-trishabelitk:/home/project/xrwvm-fullstack_developer_capstone/server$ 
