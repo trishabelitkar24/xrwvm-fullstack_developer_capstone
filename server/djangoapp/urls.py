@@ -1,11 +1,18 @@
+# Uncomment the imports before you add the code
+# from django.urls import path
+from django.conf.urls.static import static
+from django.conf import settings
+# from . import views
+
+app_name = 'djangoapp'
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('djangoapp/', include('djangoapp.urls')),
+    # # path for registration
 
-    # Home page
-    path('', TemplateView.as_view(template_name="Home.html")),
+    # path for login
+    # path(route='login', view=views.login_user, name='login'),
 
-    # About and Contact pages
-    path('about', TemplateView.as_view(template_name="About.html")),
-    path('contact', TemplateView.as_view(template_name="Contact.html")),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    # path for dealer reviews view
+
+    # path for add a review view
+
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
