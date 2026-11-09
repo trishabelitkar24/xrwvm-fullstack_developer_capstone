@@ -1,0 +1,2 @@
+theia@theia-trishabelitk:/home/project/xrwvm-fullstack_developer_capstone/server$ curl http://localhost:5050/analyze/Fantastic%20services
+{"sentiment": "positive"}theia@theia-trishabelitk:/home/project/xrwvm-fullstack_developer_capstone/server$ 
