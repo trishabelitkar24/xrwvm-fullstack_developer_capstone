@@ -1,0 +1,2 @@
+(djangoenv) theia@theia-trishabelitk:/home/project/xrwvm-fullstack_developer_capstone/server$ curl -b cookies.txt -X POST http://127.0.0.1:8000/djangoapp/logoutkies.txt -X POST http://12
+{"userName": "trishabelitk", "status": "Logged out"}(djangoenv) theia@theia-trishabelitk:/home/project/xrwvm-fullstack_developer_capstone/server$ 
