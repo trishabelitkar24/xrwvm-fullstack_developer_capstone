@@ -132,3 +132,38 @@ def get_dealer(request, dealer_id):
     return JsonResponse({
         'error': 'GET request required'
     }, status=405)
+
+
+@csrf_exempt
+def add_review(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+
+            review_text = data.get('review', '')
+            sentiment = analyze_review_sentiments(review_text)
+
+            if sentiment is not None:
+                data['sentiment'] = sentiment
+
+            response = post_review(data)
+
+            if response is not None:
+                return JsonResponse({'status': 200})
+
+            return JsonResponse({
+                'status': 503,
+                'error': 'Unable to submit review'
+            }, status=503)
+
+        except (json.JSONDecodeError, KeyError, TypeError) as error:
+            logger.error("Review submission error: %s", error)
+            return JsonResponse({
+                'status': 400,
+                'error': 'Invalid review data'
+            }, status=400)
+
+    return JsonResponse({
+        'error': 'POST request required'
+    }, status=405)
+
