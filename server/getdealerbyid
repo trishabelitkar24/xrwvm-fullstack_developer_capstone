@@ -1,0 +1,2 @@
+theia@theiadocker-trishabelitk:/home/project/xrwvm-fullstack_developer_capstone/server/database$ curl -X GET "http://localhost:3030/fetchDealer/3"
+[{"_id":"6af1c99fa64afe11d24c08f4","id":3,"city":"Birmingham","state":"Alabama","address":"9477 Twin Pines Center","zip":"35285","lat":"33.5446","long":"-86.9292","short_name":"Sub-Ex","full_name":"Sub-Ex Car Dealership","__v":0}]
